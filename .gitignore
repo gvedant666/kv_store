@@ -1,0 +1,45 @@
+# ------------------------------------------------------------------------------
+# Rust & Cargo
+# ------------------------------------------------------------------------------
+# Ignore the target directory (compiled binaries, build scripts, and dependencies)
+/target/
+
+# ------------------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------------------
+# Ignore Python cache and compiled byte-code
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Python virtual environments (if you create one for the client scripts)
+venv/
+env/
+.env/
+
+# ------------------------------------------------------------------------------
+# IDEs & Editors
+# ------------------------------------------------------------------------------
+# VS Code
+.vscode/
+
+# IntelliJ / CLion / RustRover
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+
+# ------------------------------------------------------------------------------
+# Operating System
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
