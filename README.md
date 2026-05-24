@@ -48,7 +48,7 @@ Instead of relying on heavy asynchronous runtimes like Tokio, this engine is bui
 
 ### Build & Run
 
-```bash
+
 # clone repository
 git clone [https://github.com/gvedant666/kvstore.git](https://github.com/gvedant666/kvstore.git)
 cd kvstore
@@ -128,13 +128,13 @@ This allows the parser to slice directly into the BytesMut read buffer to extrac
 ## Benchmarks & results
 Benchmarks were conducted on a local loopback interface (127.0.0.1) using the included src/bin/benchmark.rs utility, which utilizes 50 parallel OS threads to simulate standard redis-benchmark behavior.
 
-    Multi-Client Throughput: ~95,000 requests/sec
+   Multi-Client Throughput: ~95,000 requests/sec
 
-    Pipelined Throughput (100 cmds/packet): ~540,000 requests/sec
+   Pipelined Throughput (100 cmds/packet): ~540,000 requests/sec
 
-    Average Internal Engine Latency: < 10 µs (0.01 ms)
+   Average Internal Engine Latency: < 10 µs (0.01 ms)
 
-    Tail Latency (p99): < 600 µs
+   Tail Latency (p99): < 600 µs
 
 Note: These metrics prove the lock-sharding and zero-copy architecture successfully execute near-instantly, leaving only raw socket I/O overhead.
 
